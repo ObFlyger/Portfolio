@@ -127,6 +127,8 @@ body {
 #about_screen {
   position: absolute;
   top: 100vh;
+  width: 100vw;
+  height: auto;
 
   .back__title {
     position: absolute;
@@ -185,6 +187,7 @@ body {
   top: 200vh;
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
 
   .back__title {
     position: absolute;
@@ -198,13 +201,13 @@ body {
   }
 
   .container {
-    margin-top: 200px;
+    position: absolute;
+    margin-top: 150px;
+    width: 100%;
+    height: auto;
     z-index: 5;
     display: flex;
-    overflow-x: auto;
-    width: auto;
-    height: calc(100vh-200px);
-    white-space: nowrap;
+    overflow-x: hidden;
 
     .block {
       z-index: 6;
